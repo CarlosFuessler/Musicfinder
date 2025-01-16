@@ -66,8 +66,8 @@ let questionIndex = 0;
 function startQuiz() {
     questionIndex = 0;
     nextButton.innerHTML = "Next";
-    nextButton.removeEventListener("click", handleNextButton); // Remove existing listener
-    nextButton.addEventListener("click", handleNextButton); // Add new listener
+    nextButton.removeEventListener("click", handleNextButton);
+    nextButton.addEventListener("click", handleNextButton); 
     showQuestion();
 }
 //Funktion die die Fragen anzeigt
