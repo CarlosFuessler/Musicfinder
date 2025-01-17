@@ -1,7 +1,9 @@
 * {
     font-family: "Arial Rounded MT Bold";
 }
-
+.no-scroll {
+    overflow: hidden;
+}
 .off-screen {
     background-color: #373738;
     height: 100vh;
@@ -26,6 +28,7 @@
 .off-screen.active {
     right: 0;
     z-index: 101;
+
 }
 ul{
     margin-top: -65%;
@@ -106,30 +109,36 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%);
     transition: .3s ease;
+    z-index: 103;
 }
 
 .ham-menu span:nth-child(1) {
     top: 25%;
+    z-index: 103;
 }
 
 .ham-menu span:nth-child(3) {
     top: 75%;
+
+    z-index: 103;
 }
 
 .ham-menu.active span:nth-child(1) {
     top: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
-    z-index: 101;
+    z-index: 103;
+
 }
 
 .ham-menu.active span:nth-child(2) {
     opacity: 0;
+    z-index: 103;
 }
 
 .ham-menu.active span:nth-child(3) {
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
-    z-index: 101;
+    z-index: 103;
 }
 .main {
     text-align: center;

@@ -2,7 +2,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     const hamMenu = document.getElementById('hamMenu');
     const offscreen = document.getElementById('off-screen');
+    const body = document.body;
     //funktionen
+    body.classList.toggle('no-scroll');
     hamMenu.addEventListener('click', hamMenuFun);
     offscreen.addEventListener('click', offScreenFun);
     //aktivierung
@@ -15,4 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         hamMenu.classList.toggle("active");
         offscreen.classList.toggle("active");
     }
+
+
+
 });
